@@ -329,6 +329,10 @@ body {
         transform: translateY(8px);
       }
 
+.project-card:hover{
+  cursor: pointer;
+}
+
 /* Media */
 
 @media only screen and (max-width: 767px) {

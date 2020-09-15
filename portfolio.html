@@ -34,7 +34,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact | Arpad Herbut</title>
+  <title>Portfolio | Arpad Herbut</title>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/mainStyles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -44,176 +44,245 @@
     <!-- will load common navbar with js $().load() method -->
   </div>
 
-  <div class="header_wraper">
+  <!-- <div class="header_wraper"> </div> -->
     <!-- will load common header with js $().load() method -->
-  </div>
+ 
 
-  <!-- START CONTACT SECTION -->
+  <!-- START PORTFOLIO SECTION -->
   <main role="main">
 
     <section class="jumbotron text-center">
       <div class="container">
-        <h1>Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <h1>Hi I'm Arpad. Nice to meet you!</h1>
+        <p class="lead text-muted">I'm a mechanical engineer. Please find examples of my work below.<br>
+        If you want to know me even more, look at my resume or cover letter!</p>
         <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          <a href="/download/Resume-Arpad_Herbut.pdf" target="_blank" class="btn btn-primary my-2">Resume</a>
+          <a href="/download/Arpad_Herbut-CoverLetter.pdf" target="_blank" class="btn btn-secondary my-2">Cover letter</a>
         </p>
       </div>
     </section>
 
-    <div class="album py-5 bg-light">
+    <div class="album py-5">
       <div class="container">
 
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <a class="project-card" data-toggle="modal" data-target="#LupfeModal"><img class="card-img-top img-thumbnail" src="/img/lupfe_engine.jpg" alt="Lupfe" width="100%" height="100%"></a>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="https://www.lupfe.com/" target="_blank"><h5 class="card-title">Lupfe</h5></a>
+                <h6 class="card-subtitle mb-2 text-muted">Analysis Engineer</h6>
+                <p class="card-text">Conducted analysis studies of an experimental internal combustion engine, developed to be used in industrial electric quadcopter drones as a generator set. Mainly worked with Ansys Workbench.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" data-toggle="modal" data-target="#LupfeModal" class="btn btn-sm btn-outline-secondary">More</button>
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text-muted">2 years 3 months</small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <a class="project-card" data-toggle="modal" data-target="#NaVegreModal"><img class="card-img-top img-thumbnail" src="/img/lupfe_engine.jpg" alt="Lupfe" width="100%" height="100%"></a>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">NaVegre</h5>
+                <h6 class="card-subtitle mb-2 text-muted">CAD/CAM Engineer</h6>
+                <p class="card-text">Conducted analysis studies of an experimental internal combustion engine, developed to be used in industrial electric quadcopter drones as a generator set. Mainly worked with Ansys Workbench.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" data-toggle="modal" data-target="#NaVegreModal" class="btn btn-sm btn-outline-secondary">More</button>
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text-muted">5 years 1 months</small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <a class="project-card" data-toggle="modal" data-target="#LumoConceptModal"><img class="card-img-top img-thumbnail" src="/img/fluid_background.jpg" alt="Lupfe" width="100%" height="100%"></a>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="https://www.lumoconcept.com/" target="_blank"><h5 class="card-title">LumoConcept</h5></a>
+                <h6 class="card-subtitle mb-2 text-muted">Design Engineer</h6>
+                <p class="card-text">Custom lamp design company. Fast paced environment. Design cycle for a new lamp usually lasted about two to three months. I was responsible to design the product, create drafts of the parts and assemblies, plan and organize production schedules, and supervise the assembly of my design.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" data-toggle="modal" data-target="#LupfeModal" class="btn btn-sm btn-outline-secondary">More</button>
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text-muted">11 months</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <a class="project-card" data-toggle="modal" data-target="#LupfeModal"><img class="card-img-top img-thumbnail" src="/img/lupfe_engine.jpg" alt="Lupfe" width="100%" height="100%"></a>
+              <div class="card-body">
+                <h5 class="card-title">Lupfe</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Analysis Engineer</h6>
+                <p class="card-text">Conducted analysis studies of an experimental internal combustion engine, developed to be used in industrial electric quadcopter drones as a generator set. Mainly worked with Ansys Workbench.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" data-toggle="modal" data-target="#LupfeModal" class="btn btn-sm btn-outline-secondary">More</button>
+                  </div>
+                  <small class="text-muted">2 years 3 months</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <a class="project-card" data-toggle="modal" data-target="#LupfeModal"><img class="card-img-top img-thumbnail" src="/img/lupfe_engine.jpg" alt="Lupfe" width="100%" height="100%"></a>
+              <div class="card-body">
+                <h5 class="card-title">Lupfe</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Analysis Engineer</h6>
+                <p class="card-text">Conducted analysis studies of an experimental internal combustion engine, developed to be used in industrial electric quadcopter drones as a generator set. Mainly worked with Ansys Workbench.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" data-toggle="modal" data-target="#LupfeModal" class="btn btn-sm btn-outline-secondary">More</button>
+                  </div>
+                  <small class="text-muted">2 years 3 months</small>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
 
-  </main>
-  <!-- END CONTACT SECTION -->
 
+<!-- Modal -->
+
+<!-- Lupfe -->
+<div class="modal fade" id="LupfeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Lupfe | Analysis Enginer <small class="text-muted">2 years 3 months</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="cv-lupfe">
+          <h2 id="title-lupfe" class="cv-section-header">Analysis Engineer, Feb 2017 – May 2019</h2>
+           <h3 class="cv-location"><a id="profile-link"
+             href="https://lupfe.com/"
+             class="cv-link"
+             target="_blank"
+             >Lupfe Lp.</a>, Budapest, Hungary</h3>
+           <p class="cv-text">Conducted analysis studies of an experimental internal combustion engine, developed to be used in industrial electric quadcopter drones as a <a id="profile-link"
+             href="https://lupfe.com/products/genset"
+             class="cv-link"
+             target="_blank"
+             >generator set</a>. Mainly worked with Ansys Workbench.</p>
+           <p class="cv-subtext">Key responsibilities</p>
+           <ul class="cv-list">
+            <li>Designing cooling strategies for the engine head, especially around the combustion chamber (Ansys Fluent)</li>
+           <li>Built steady and transient flow simulations of the intake and exhaust ports (Ansys Fluent)</li>
+           <li>Fuel injection and spray modeling (Ansys Fluent)</li>
+           <li>Airframe stress analysis for a quadcopter drone</li>
+           <li>Nonlinear static and dynamic stress analysis on composite and metal parts of the airframe, the powertrain and gearboxes.</li>
+           <li>Nonlinear static and dynamic stress analysis on composite and metal parts of the airframe, the powertrain and gearboxes.</li>
+           <li>Optimization of various engine parts based on structural and thermal stress</li>
+           <li>Detail design of thermal systems based on 1D-2D and 3D analysis</li>
+           <li>Prepared process documentation of modeling methods for use by future employees</li>
+           <li>Communication with team members and external suppliers to understand requirements and constraints</li>
+           <li>Contact stress analysis, contact of gears, sliding surfaces (rockers)</li>
+           <li>Analysis of rotating parts (main shaft, crank shaft)</li>
+           <li>Bearings load distribution analysis</li>
+           <li>Dynamic structural analysis. Modeling of the main shaft-rocker-spring system.</li>
+           <li>Preparing meshes for static and dynamic cases</li>
+           <li>Pre- and post-processing of simulations</li>
+           <li>Presentation of analysis results to design and management </li>
+           <li>Built and maintained our IT system, a network of ~15 computers (Windows, Linux), engineering software (Creo Parametric, ANSYS), and a revision control system (TortoiseSVN). </li>
+         </ul>
+           <p class="cv-subtext">Key achievement</p>
+           <ul class="cv-list">
+             <li>Due to the completion of the engine port design based on our analysis, the engine head will be manufactured in 2020 with cold-flow testing beginning shortly thereafter.</li>
+         </ul>
+           </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NaVegre -->
+<div class="modal fade" id="NaVegreModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">NaVegre | CAD/CAM Engineer <small class="text-muted">5 years 1 months</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="cv-navegre">
+          <h2 id="title-navegre" class="cv-section-header">CAD/CAM Engineer, Oct 2011 – Dec 2016</h2>
+           <h3 class="cv-location">NaVégre Műszaki és Szolgáltató LP, Hungary (Part time)</h3>
+           <ul class="cv-list">
+             <li>Modelled 3D parts based on drawings, built machining plans for 2.5D milling, and wired electrical discharge machines (Esprit, CREO).</li>
+           <li>Built and maintained the network between the CAM workstation, a 2.5D milling station and a wired EDM.</li>
+           <li>Enhanced productivity and connected the design and manufacturing teams.</li>
+           <li>Maintained a good relationship between the technicians and the management department, which led to an improved work environment and increased productivity.</li>
+         </ul>
+           </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LumoConcept -->
+<div class="modal fade" id="LumoConceptModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">LumoConcept | Design Engineer <small class="text-muted">11 months</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="cv-navegre">
+          <h2 id="title-navegre" class="cv-section-header">CAD/CAM Engineer, Oct 2011 – Dec 2016</h2>
+           <h3 class="cv-location">Lumoconcept, Budapest, Hungary</h3>
+           <p>Custom lamp design company. Fast paced environment. Design cycle for a new lamp usually lasted about two to three months. I was responsible to design the product, create drafts of the parts and assemblies, plan and organize production schedules, and supervise the assembly of my design. </p>
+           <ul class="cv-list">
+             <li>Discuss Technical requirements and gather project inputs.</li>
+           <li>Interact with project manager(s) to understand requirements of the project.</li>
+           <li>Interact with project manager(s) to review and ensure project progress as per project plan.</li>
+           <li>Set the work priority as per the delivery timelines and keep track of project priority, schedules and various deliverables.</li>
+           <li>Understand standards/practices being followed for product design & capture data to incorporate in project execution support from offsite location.</li>
+           <li>Preparation of manufacturing drawings, 3D Part & assembly models, BOMs</li>
+           <li>Provide mechanical design support to the engineering team for modifying the existing drawings/Models or creating new drawings as per the inputs provided by customer/manufacturer.</li>
+           <li>Review and peer check BOM and 3D Models and drawings from Offsite deliverables.</li>
+           <li>Understand and identify measures to be taken to close the gap of engineering, technical and quality requirements.</li>
+         </ul>
+           </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+  <!-- END PORTFOLIO SECTION -->
 
   <div class="footer_wraper">
         <!-- will load common footer with js $().load() method -->
-  </div>
+      </div>
     <script src="/js/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
