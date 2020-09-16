@@ -3,4 +3,5 @@ $(document).ready(() => {
   $(".header_wraper").load("/components/header.html");
   $(".navbar_wraper").load("/components/navbar.html");
   $(".footer_wraper").load("/components/footer.html");
+  $(".modal_wraper").load("/components/modal.html");
 });
