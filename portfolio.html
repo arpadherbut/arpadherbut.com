@@ -6,7 +6,7 @@
     <title>Portfolio | Arpad Herbut</title>
     <meta
       name="description"
-      content="Work experience of mechanical engineer Árpád Herbut: Lupfe, NaVegre, LumoConcept, AVL and Audi."
+      content="Work experience of mechanical design engineer Árpád Herbut: Joby Aviation, Lupfe, NaVégre, LumoConcept, AVL and Audi."
     />
     <link rel="canonical" href="https://arpadherbut.com/portfolio" />
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
@@ -72,13 +72,6 @@
                   rel="noopener"
                   >Resume <i class="fas fa-file-pdf"></i
                 ></a>
-                <a
-                  class="dropdown-item"
-                  href="/download/Arpad_Herbut-CoverLetter.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  >Cover Letter <i class="fas fa-file-pdf"></i
-                ></a>
                 <a class="dropdown-item" href="/webdev">Web Development</a>
               </div>
             </li>
@@ -107,6 +100,35 @@
           <div class="row">
             <div class="col-md-4 py-2">
               <div class="card mb-4 shadow-sm h-100">
+                <a class="project-card" data-toggle="modal" data-target="#JobyModal"
+                  ><img
+                    class="card-img-top img-thumbnail"
+                    src="/img/joby-500x333px.webp"
+                    width="500"
+                    height="333"
+                    alt="Joby Aviation eVTOL aircraft (photo: Joby Aviation)"
+                /></a>
+                <div class="card-body">
+                  <a href="https://www.jobyaviation.com/" target="_blank" rel="noopener"
+                    ><h5 class="card-title">Joby Aviation</h5></a
+                  >
+                  <h6 class="card-subtitle mb-2 text-muted">Mechanical Design Engineer</h6>
+                  <p class="card-text">
+                    Mechanical design of aircraft hardware for the Environmental Control System: ventilation fans, sensors, ducting, vents and supporting structure in CATIA. Responsible engineer for multiple assemblies, from concept through flight test.
+                  </p>
+                </div>
+                <div class="card-footer text-muted">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" data-toggle="modal" data-target="#JobyModal" class="btn btn-sm btn-outline-secondary">More</button>
+                    </div>
+                    <small class="text-muted">Jan 2021 – present</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="card mb-4 shadow-sm h-100">
                 <a class="project-card" data-toggle="modal" data-target="#LupfeModal"
                   ><img
                     class="card-img-top img-thumbnail"
@@ -119,7 +141,7 @@
                   <a href="https://www.lupfe.com/" target="_blank" rel="noopener"
                     ><h5 class="card-title">Lupfe</h5></a
                   >
-                  <h6 class="card-subtitle mb-2 text-muted">Mechanical Analysis Engineer</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Analysis Engineer</h6>
                   <p class="card-text">
                     Conducted analysis studies of an experimental internal combustion engine, developed to be used in industrial electric quadcopter drones as a generator set. Mainly worked with Ansys Workbench.
                   </p>
@@ -145,8 +167,8 @@
                     alt="CNC machine"
                 /></a>
                 <div class="card-body">
-                  <h5 class="card-title">NaVegre</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">CAD/CAM Engineer</h6>
+                  <h5 class="card-title">NaVégre</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">CAM Programmer / Design Engineer</h6>
                   <p class="card-text">
                     Modelled 3D parts based on drawings, built machining plans for 2.5D
                     milling, and wired electrical discharge machines (Esprit, CREO).<br />Built and maintained the network between the CAM workstation, a 2.5D milling station and a wired EDM.
@@ -170,6 +192,7 @@
                     src="/img/lumoconcept-500x333px.webp"
                     width="500"
                     height="333"
+                    loading="lazy"
                     alt="LumoConcept custom lamp design"
                 /></a>
                 <div class="card-body">
@@ -206,7 +229,7 @@
                   <a href="https://www.avl.com/" target="_blank" rel="noopener"
                     ><h5 class="card-title">AVL</h5></a
                   >
-                  <h6 class="card-subtitle mb-2 text-muted">Mechanical Analysis Engineer Intern</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Analysis Engineer Intern</h6>
                   <p class="card-text">
                     Aided in the development of internal combustion engine cooling systems
                     and cooperated with an international team of design and mechanical
@@ -238,7 +261,7 @@
                   <a href="https://audi.hu/en/" target="_blank" rel="noopener"
                     ><h5 class="card-title">Audi</h5></a
                   >
-                  <h6 class="card-subtitle mb-2 text-muted">Mechanical Analysis Engineer Intern</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Analysis Engineer Intern</h6>
                   <p class="card-text">
                     Explored and researched possible applications of the ABAQUS CFD software
                     for the internal combustion engine development department (ABAQUS CFD,
@@ -292,7 +315,116 @@
     </main>
 
     <!-- Work experience modals (shared by index and portfolio) -->
-  <!-- Modal -->
+    <!-- Joby Aviation -->
+    <div
+      class="modal fade"
+      id="JobyModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="JobyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="JobyModalLabel">
+              <a href="https://www.jobyaviation.com/" target="_blank" rel="noopener">Joby Aviation</a>
+              | Mechanical Design Engineer <br /><small class="text-muted"
+                >Jan 2021 – present</small
+              >
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <h6 class="cv-section-header">
+                San Carlos, CA<br /><small>Jan 2021 – Present</small>
+              </h6>
+              <p class="cv-text">
+                Mechanical design of aircraft hardware for the Environmental
+                Control System (ECS). Responsible engineer for multiple
+                assemblies, deployed across multiple aircraft platforms.
+              </p>
+              <p class="cv-subtext">Design &amp; development</p>
+              <ul class="cv-list">
+                <li>
+                  Design in CATIA the ventilation fans, thermal sensors, air
+                  ducting, refrigeration routing and fittings, passenger vents,
+                  intake and exhaust louvers and supporting structure for the
+                  aircraft ECS.
+                </li>
+                <li>
+                  Produce 3D models, 2D drawings with ASME Y14.5 GD&amp;T and
+                  parts lists, and release designs and BOMs through a
+                  configuration-controlled process (ENOVIA PLM).
+                </li>
+                <li>
+                  Perform structural and stress analysis on assemblies and
+                  supporting structures, and tolerance analysis on interfaces.
+                </li>
+                <li>
+                  Package hardware into tight spaces, coordinating interfaces
+                  with primary structure, wiring, industrial design, human
+                  factors, landing gear and flight deck teams.
+                </li>
+                <li>
+                  Work with milled and EDM metallic parts, injection-molded
+                  parts, splined shaft connections, urethane casting, potting
+                  tools, foam ducting, gaskets, custom refrigeration fittings
+                  and 3D printing, directly with machining and molding
+                  suppliers.
+                </li>
+              </ul>
+              <p class="cv-subtext">Build, test &amp; integration</p>
+              <ul class="cv-list">
+                <li>
+                  Led assemblies from rapid proof of concept through design for
+                  manufacturing, testing, integration and flight test.
+                </li>
+                <li>
+                  Oversee vendor communications and early part procurement
+                  before hand-off to supply chain.
+                </li>
+                <li>
+                  Define manufacturing work instructions, train technicians and
+                  support manufacturing bring-up on site.
+                </li>
+                <li>
+                  Work with test teams and Designated Engineering
+                  Representatives to define DO-160 acceptance criteria, evaluate
+                  results and fold findings into later revisions.
+                </li>
+              </ul>
+              <p class="cv-subtext">Leadership</p>
+              <ul class="cv-list">
+                <li>
+                  Manage project schedule, scope and cost; carried designs
+                  through preliminary design review toward critical design
+                  review.
+                </li>
+                <li>Contributed to the architecture of multiple ECS concepts.</li>
+                <li>
+                  Trained peers and contractors in drafting, modeling and design
+                  release.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Lupfe -->
     <div
@@ -308,7 +440,7 @@
           <div class="modal-header">
             <h5 class="modal-title" id="LupfeModalLabel">
               <a href="https://www.lupfe.com/" target="_blank" rel="noopener">Lupfe </a>|
-              Mechanical Analysis Enginer <br /><small class="text-muted"
+              Analysis Engineer <br /><small class="text-muted"
                 >2 years 3 months</small
               >
             </h5>
@@ -331,7 +463,6 @@
                 engine, developed to be used in industrial electric quadcopter
                 drones as a
                 <a
-               
                   href="https://lupfe.com/products/genset"
                   class="cv-link"
                   target="_blank" rel="noopener"
@@ -350,10 +481,6 @@
                 </li>
                 <li>Fuel injection and spray modeling (Ansys Fluent)</li>
                 <li>Airframe stress analysis for a quadcopter drone</li>
-                <li>
-                  Nonlinear static and dynamic stress analysis on composite and
-                  metal parts of the airframe, the powertrain and gearboxes.
-                </li>
                 <li>
                   Nonlinear static and dynamic stress analysis on composite and
                   metal parts of the airframe, the powertrain and gearboxes.
@@ -395,9 +522,8 @@
               <p class="cv-subtext">Key achievement</p>
               <ul class="cv-list">
                 <li>
-                  Due to the completion of the engine port design based on our
-                  analysis, the engine head will be manufactured in 2020 with
-                  cold-flow testing beginning shortly thereafter.
+                  Completed the engine port design based on our analysis, clearing
+                  the engine head for manufacturing and cold-flow testing in 2020.
                 </li>
               </ul>
             </div>
@@ -424,7 +550,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="NaVegreModalLabel">
-              NaVegre | CAD/CAM Engineer <br /><small class="text-muted"
+              NaVégre | CAM Programmer / Design Engineer <br /><small class="text-muted"
                 >5 years 1 months</small
               >
             </h5>
@@ -578,7 +704,7 @@
                 target="_blank" rel="noopener"
                 >AVL</a
               >
-              | Mechanical Analysis Engineer Intern<br /><small class="text-muted"
+              | Analysis Engineer Intern<br /><small class="text-muted"
                 >8 months</small
               >
             </h5>
@@ -651,7 +777,7 @@
           <div class="modal-body">
             <div>
               <h6 class="cv-section-header">
-                Gyor, Hungary<br /><small>Mar 2014 – Jan 2015</small>
+                Győr, Hungary<br /><small>Mar 2014 – Jan 2015</small>
               </h6>
               <p class="cv-text">
                 Explored and researched possible applications of the ABAQUS CFD

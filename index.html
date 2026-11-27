@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arpad Herbut</title>
+    <title>Arpad Herbut | Mechanical Design Engineer</title>
     <meta
       name="description"
-      content="Árpád Herbut, mechanical engineer: engine development, CFD and structural analysis, CAD/CAM and part design. Portfolio, resume and contact details."
+      content="Árpád Herbut, mechanical design engineer: aircraft hardware at Joby Aviation, CATIA and GD&amp;T, engine development and CFD/structural analysis. Portfolio, resume and contact details."
     />
     <link rel="canonical" href="https://arpadherbut.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Arpad Herbut | Mechanical Engineer" />
+    <meta property="og:title" content="Arpad Herbut | Mechanical Design Engineer" />
     <meta
       property="og:description"
-      content="Engine development, CFD and structural analysis, CAD/CAM and part design."
+      content="Aircraft hardware design at Joby Aviation, plus a background in engine development, CFD and structural analysis."
     />
     <meta property="og:url" content="https://arpadherbut.com/" />
     <meta
       property="og:image"
-      content="https://arpadherbut.com/img/CFD-Cylinder-Head-Cooling.jpg"
+      content="https://arpadherbut.com/img/joby-500x450px.webp"
     />
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
@@ -85,13 +85,6 @@
                   rel="noopener"
                   >Resume <i class="fas fa-file-pdf"></i
                 ></a>
-                <a
-                  class="dropdown-item"
-                  href="/download/Arpad_Herbut-CoverLetter.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  >Cover Letter <i class="fas fa-file-pdf"></i
-                ></a>
                 <a class="dropdown-item" href="/webdev">Web Development</a>
               </div>
             </li>
@@ -126,14 +119,28 @@
               data-ride="carousel"
             >
               <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
               </ol>
               <div class="container b">
                 <div class="carousel-inner">
+                  <div class="carousel-item active" data-toggle="modal" data-target="#JobyModal">
+                    <img
+                      class="d-block w-50 mx-auto img-thumbnail"
+                      src="/img/joby-500x450px.webp"
+                      width="500"
+                      height="450"
+                      fetchpriority="high"
+                      alt="Joby Aviation eVTOL aircraft (photo: Joby Aviation)"
+                    />
+                    <div class="carousel-caption d-none d-md-block robo_bold_26">
+                      Aircraft Hardware Design
+                    </div>
+                  </div>
                   <div class="carousel-item" data-toggle="modal" data-target="#AVLModal">
                     <img
                       class="d-block w-50 mx-auto img-thumbnail"
@@ -170,13 +177,12 @@
                       Custom Part Design
                     </div>
                   </div>
-                  <div class="carousel-item active" data-toggle="modal" data-target="#LupfeModal">
+                  <div class="carousel-item" data-toggle="modal" data-target="#LupfeModal">
                     <img
                       class="d-block w-50 mx-auto img-thumbnail"
                       src="/img/Lupfe-Sized-500x450px.webp"
                       width="500"
                       height="450"
-                      fetchpriority="high"
                       alt="Lupfe engine analysis"
                     />
                     <div class="carousel-caption d-none d-md-block robo_bold_26">
@@ -221,26 +227,23 @@
           <!-- Card content -->
           <div class="card-body text-center mb-3 bg-grad">
             <h1 class="card-title h3 my-4 bg">
-              <strong>Hi, I'm Árpád, and I'm a Mechanical Engineer.</strong>
+              <strong>Hi, I'm Árpád, and I'm a Mechanical Design Engineer.</strong>
             </h1>
             <p class="card-text py-2 text-justify col-md-8 mx-auto">
-              I relocated to the U.S. from Hungary in June of 2019. I am currently located in Burleson, TX.
-              For the last four years, I worked on developing internal combustion engines. I also have five years of experience in manufacturing and three in part design.
-              While getting my Master's, I specialized in fluid and applied mechanics.<br /><br />
-              I am effective at achieving clear results under tight schedules and limited budgets.
-              <br />You can find examples of my work in my
-              <a class="atag" href="/portfolio">portfolio.</a> <br />
-              Also, please feel free to take a look at my resume and cover letter.
+              I design aircraft hardware at Joby Aviation in the San Francisco Bay Area.
+              Since 2021, I have been the responsible engineer for Environmental Control System assemblies,
+              taking them from concept through integration, checkout and flight test across multiple aircraft platforms.<br /><br />
+              Before moving to the U.S. from Hungary in 2019, I worked on internal combustion engine development,
+              part design and manufacturing, and earned my Master's in mechanical engineering, specializing in fluid mechanics.
+              I work in CATIA with GD&amp;T and configuration-controlled design release, and I'm at home on the shop floor
+              with machinists, molders and technicians.<br /><br />
+              You can find examples of my work in my
+              <a class="atag" href="/portfolio">portfolio</a>, and my resume is available below.
             </p>
             <a
               href="/download/Resume-Arpad_Herbut.pdf"
               class="btn btn-info btn-rounded mb-4 bg-dark contact-details"
-              >Resume</a
-            >
-            <a
-              href="/download/Arpad_Herbut-CoverLetter.pdf"
-              class="btn btn-info btn-rounded mb-4 bg-dark contact-details"
-              >Cover letter</a
+              >Resume (PDF)</a
             >
 
             <!-- Footer (shared: keep in sync across pages) -->
@@ -280,7 +283,116 @@
     </section>
 
     <!-- Work experience modals (shared by index and portfolio) -->
-  <!-- Modal -->
+    <!-- Joby Aviation -->
+    <div
+      class="modal fade"
+      id="JobyModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="JobyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="JobyModalLabel">
+              <a href="https://www.jobyaviation.com/" target="_blank" rel="noopener">Joby Aviation</a>
+              | Mechanical Design Engineer <br /><small class="text-muted"
+                >Jan 2021 – present</small
+              >
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <h6 class="cv-section-header">
+                San Carlos, CA<br /><small>Jan 2021 – Present</small>
+              </h6>
+              <p class="cv-text">
+                Mechanical design of aircraft hardware for the Environmental
+                Control System (ECS). Responsible engineer for multiple
+                assemblies, deployed across multiple aircraft platforms.
+              </p>
+              <p class="cv-subtext">Design &amp; development</p>
+              <ul class="cv-list">
+                <li>
+                  Design in CATIA the ventilation fans, thermal sensors, air
+                  ducting, refrigeration routing and fittings, passenger vents,
+                  intake and exhaust louvers and supporting structure for the
+                  aircraft ECS.
+                </li>
+                <li>
+                  Produce 3D models, 2D drawings with ASME Y14.5 GD&amp;T and
+                  parts lists, and release designs and BOMs through a
+                  configuration-controlled process (ENOVIA PLM).
+                </li>
+                <li>
+                  Perform structural and stress analysis on assemblies and
+                  supporting structures, and tolerance analysis on interfaces.
+                </li>
+                <li>
+                  Package hardware into tight spaces, coordinating interfaces
+                  with primary structure, wiring, industrial design, human
+                  factors, landing gear and flight deck teams.
+                </li>
+                <li>
+                  Work with milled and EDM metallic parts, injection-molded
+                  parts, splined shaft connections, urethane casting, potting
+                  tools, foam ducting, gaskets, custom refrigeration fittings
+                  and 3D printing, directly with machining and molding
+                  suppliers.
+                </li>
+              </ul>
+              <p class="cv-subtext">Build, test &amp; integration</p>
+              <ul class="cv-list">
+                <li>
+                  Led assemblies from rapid proof of concept through design for
+                  manufacturing, testing, integration and flight test.
+                </li>
+                <li>
+                  Oversee vendor communications and early part procurement
+                  before hand-off to supply chain.
+                </li>
+                <li>
+                  Define manufacturing work instructions, train technicians and
+                  support manufacturing bring-up on site.
+                </li>
+                <li>
+                  Work with test teams and Designated Engineering
+                  Representatives to define DO-160 acceptance criteria, evaluate
+                  results and fold findings into later revisions.
+                </li>
+              </ul>
+              <p class="cv-subtext">Leadership</p>
+              <ul class="cv-list">
+                <li>
+                  Manage project schedule, scope and cost; carried designs
+                  through preliminary design review toward critical design
+                  review.
+                </li>
+                <li>Contributed to the architecture of multiple ECS concepts.</li>
+                <li>
+                  Trained peers and contractors in drafting, modeling and design
+                  release.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Lupfe -->
     <div
@@ -296,7 +408,7 @@
           <div class="modal-header">
             <h5 class="modal-title" id="LupfeModalLabel">
               <a href="https://www.lupfe.com/" target="_blank" rel="noopener">Lupfe </a>|
-              Mechanical Analysis Enginer <br /><small class="text-muted"
+              Analysis Engineer <br /><small class="text-muted"
                 >2 years 3 months</small
               >
             </h5>
@@ -319,7 +431,6 @@
                 engine, developed to be used in industrial electric quadcopter
                 drones as a
                 <a
-               
                   href="https://lupfe.com/products/genset"
                   class="cv-link"
                   target="_blank" rel="noopener"
@@ -338,10 +449,6 @@
                 </li>
                 <li>Fuel injection and spray modeling (Ansys Fluent)</li>
                 <li>Airframe stress analysis for a quadcopter drone</li>
-                <li>
-                  Nonlinear static and dynamic stress analysis on composite and
-                  metal parts of the airframe, the powertrain and gearboxes.
-                </li>
                 <li>
                   Nonlinear static and dynamic stress analysis on composite and
                   metal parts of the airframe, the powertrain and gearboxes.
@@ -383,9 +490,8 @@
               <p class="cv-subtext">Key achievement</p>
               <ul class="cv-list">
                 <li>
-                  Due to the completion of the engine port design based on our
-                  analysis, the engine head will be manufactured in 2020 with
-                  cold-flow testing beginning shortly thereafter.
+                  Completed the engine port design based on our analysis, clearing
+                  the engine head for manufacturing and cold-flow testing in 2020.
                 </li>
               </ul>
             </div>
@@ -412,7 +518,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="NaVegreModalLabel">
-              NaVegre | CAD/CAM Engineer <br /><small class="text-muted"
+              NaVégre | CAM Programmer / Design Engineer <br /><small class="text-muted"
                 >5 years 1 months</small
               >
             </h5>
@@ -566,7 +672,7 @@
                 target="_blank" rel="noopener"
                 >AVL</a
               >
-              | Mechanical Analysis Engineer Intern<br /><small class="text-muted"
+              | Analysis Engineer Intern<br /><small class="text-muted"
                 >8 months</small
               >
             </h5>
@@ -639,7 +745,7 @@
           <div class="modal-body">
             <div>
               <h6 class="cv-section-header">
-                Gyor, Hungary<br /><small>Mar 2014 – Jan 2015</small>
+                Győr, Hungary<br /><small>Mar 2014 – Jan 2015</small>
               </h6>
               <p class="cv-text">
                 Explored and researched possible applications of the ABAQUS CFD
