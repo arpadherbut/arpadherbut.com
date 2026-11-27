@@ -156,14 +156,17 @@ a.btn:active {
 @font-face {
   font-family: "Roboto_Regular";
   src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Roboto_Medium";
-  src: url("/fonts/Roboto-Medium.ttf") format("trueType");
+  src: url("/fonts/Roboto-Medium.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Roboto_Bold";
   src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+  font-display: swap;
 }
 
 .roboto_regular_base,
@@ -602,4 +605,4 @@ a.btn:active {
   }
 }
 
-/*# sourceMappingURL=mainStyles.css.map */
+

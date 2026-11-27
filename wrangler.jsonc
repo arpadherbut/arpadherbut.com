@@ -1,0 +1,20 @@
+// Cloudflare Workers config: serves this repo as a static site.
+// Deploy: `npx wrangler deploy` from this folder.
+{
+  "$schema": "https://unpkg.com/wrangler@4.168.0/config-schema.json",
+  "name": "arpadherbut",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    // The repo root is the site; .assetsignore keeps repo-only files out.
+    "directory": ".",
+    // /contact.html redirects to /contact; /index.html to /.
+    "html_handling": "auto-trailing-slash",
+    // Unknown paths get 404.html with a 404 status.
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "arpadherbut.com", "custom_domain": true },
+    { "pattern": "www.arpadherbut.com", "custom_domain": true }
+  ]
+}

@@ -1,77 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Start of Initial Definitions -->
-
-  <!-- Font awesome definition for icons -->
-  <script
-    src="https://kit.fontawesome.com/76217a6cb5.js"
-    crossorigin="anonymous"
-  ></script>
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-    crossorigin="anonymous"
-  />
-
-  <!-- Google Font definition -->
-
-  <!-- font:Poppins -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- font:Raleway -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- End of Initial Definitions -->
-
   <head>
-    <link rel="stylesheet" href="/css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact | Arpad Herbut</title>
+    <meta
+      name="description"
+      content="Get in touch with mechanical engineer Árpád Herbut by phone, e-mail, LinkedIn or Facebook."
+    />
+    <link rel="canonical" href="https://arpadherbut.com/contact" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/mainStyles.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
     />
-    <!-- Favicon -->
-    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body class="bg-light">
+    <!-- Navbar (shared: keep in sync across pages) -->
     <div class="navbar_wraper">
-      <!-- will load common navbar with js $().load() method -->
+      <nav class="navbar navbar-expand-lg navbar-light rounded">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample10"
+          aria-controls="navbarsExample10"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <img src="/img/Logo.webp" width="80" height="40" alt="" />
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-md-center"
+          id="navbarsExample10"
+        >
+          <ul class="navbar-nav navbar_links">
+            <img
+              src="/img/Logo.webp"
+              width="80"
+              height="40"
+              alt="Arpad Herbut logo"
+              class="collapse navbar-collapse"
+            />
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contact" aria-current="page">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown10"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Work Experience</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown10">
+                <a class="dropdown-item" href="/portfolio">Portfolio</a>
+                <a
+                  class="dropdown-item"
+                  href="/download/Resume-Arpad_Herbut.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >Resume <i class="fas fa-file-pdf"></i
+                ></a>
+                <a
+                  class="dropdown-item"
+                  href="/download/Arpad_Herbut-CoverLetter.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >Cover Letter <i class="fas fa-file-pdf"></i
+                ></a>
+                <a class="dropdown-item" href="/webdev">Web Development</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                href="tel:817-489-8846"
+                class="btn contact-details main-white"
+                aria-label="Call"
+                ><i class="fas fa-mobile-alt"></i>
+              </a>
+              <a
+                href="mailto:herbut.arp@gmail.com"
+                class="btn contact-details main-white"
+                aria-label="E-mail"
+                ><i class="fas fa-at"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
-    <!-- START CONTACT SECTION -->
     <section id="contact" class="contact-section">
-      <div class="container text-center ">
-        <!-- Jumbotron -->
-        <div class="jumbotron p-0 ">
-          <!-- Card content -->
+      <div class="container text-center">
+        <div class="jumbotron p-0">
           <div class="card-body text-center mb-3 bg-grad h-100">
-            <!-- Title -->
-            <h3 class="card-title h3 my-4 bg robo_bold_26">
+            <h1 class="card-title h3 my-4 bg robo_bold_26">
               <strong>Let's Get In Touch</strong>
-            </h3>
-            <!-- Text -->
-            <div class="">
+            </h1>
+            <div>
               <a
                 href="https://facebook.com/arpadherbut"
                 target="_blank"
+                rel="noopener"
                 class="btn btn-info btn-rounded mb-4 bg-dark contact-details"
                 ><i class="fab fa-facebook-square"></i> Facebook</a
               >
               <a
                 href="https://linkedin.com/in/arpadherbut"
                 target="_blank"
+                rel="noopener"
                 class="btn btn-info btn-rounded mb-4 bg-dark contact-details"
                 ><i class="fab fa-linkedin-in"></i> Linkedin
               </a>
@@ -81,21 +129,49 @@
                 ><i class="fas fa-at"></i> E-mail</a
               >
               <br />
-              <a href="tel:817-489-8846" class="btn btn-info btn-rounded mb-4 bg-dark contact-details"
-                ><i class="fas fa-mobile-alt"> (817) 489-8846</i>
+              <a
+                href="tel:817-489-8846"
+                class="btn btn-info btn-rounded mb-4 bg-dark contact-details"
+                ><i class="fas fa-mobile-alt"></i> (817) 489-8846
               </a>
             </div>
-                  <!-- will load common footer with js $().load() method -->
-            <div class="footer_wraper "></div>
+            <!-- Footer (shared: keep in sync across pages) -->
+            <div class="footer_wraper">
+              <footer class="footer mt-auto py-3 text-md-right">
+                <div class="container">
+                  <a href="tel:817-489-8846" class="btn contact-details robo_bold_12 bg-dark"
+                    ><i class="fas fa-mobile-alt"></i> (817) 489-8846
+                  </a>
+                  <a
+                    href="mailto:herbut.arp@gmail.com"
+                    class="btn contact-details robo_bold_12 bg-dark"
+                    >herbut.arp<i class="fas fa-at"></i>gmail.com</a
+                  >
+                  <a
+                    href="https://facebook.com/arpadherbut"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook"
+                    class="btn contact-details robo_bold_12 bg-dark"
+                    ><i class="fab fa-facebook-square"></i
+                  ></a>
+                  <a
+                    href="https://linkedin.com/in/arpadherbut"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn"
+                    class="btn contact-details robo_bold_12 bg-dark"
+                    ><i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </footer>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- END CONTACT SECTION -->
-    </div>
+
     <script src="/js/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/mainFunctions.js"></script>
   </body>
 </html>
