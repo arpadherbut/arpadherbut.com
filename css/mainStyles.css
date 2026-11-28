@@ -64,14 +64,17 @@ ul {
   color: var(--main-light);
 }
 
+/* Page background: the one site-wide gradient (every page's <body> has
+   .bg-light). Lightest in the middle where the text sits, darker at the
+   sides. .bg-grad boxes are transparent so the gradient stays seamless. */
 .bg-light {
   background: linear-gradient(
     90deg,
-    var(--main-white),
-    var(--main-white),
-    var(--main-white),
-    var(--main-white)
-  );
+    var(--main-neutral) 0%,
+    var(--main-white) 30%,
+    var(--main-white) 70%,
+    var(--main-neutral) 100%
+  ) !important;
 }
 
 .main-neutral {
@@ -86,71 +89,34 @@ ul {
   color: var(--main-black);
 }
 
-.bg-grad {
-  background: linear-gradient(
-    90deg,
-    var(--main-white),
-    var(--main-neutral),
-    var(--main-white)
-  );
+.bg-grad,
+.jumbotron {
+  background: transparent;
 }
 
-/* Link Style */
+/* Link Style: dark blue reads well on the light page background */
 
-/* General */
-
-/* unvisited link */
-a:link {
-  color: var(--main-neutral);
-}
-
-/* visited link */
+a:link,
 a:visited {
-  color: var(--main-neutral);
-}
-
-/* mouse over link */
-a:hover {
   color: var(--main-dark);
 }
 
-/* selected link */
+a:hover,
 a:active {
-  color: var(--main-dark);
-}
-
-a.atag:link {
-  color: var(--main-white);
-}
-
-a.atag:visited {
-  color: var(--main-white);
-}
-
-a.atag:hover {
   color: var(--main-black);
 }
 
-/* Custom .atag */
-
-a.atag:active {
-  color: var(--main-dark);
-}
-
-a.atag:link {
-  color: var(--main-white);
-}
-
+/* In-text links (.atag): same color, underlined so they're findable */
+a.atag:link,
 a.atag:visited {
-  color: var(--main-white);
-}
-
-a.atag:hover {
-  color: var(--main-black);
-}
-
-a.atag:active {
   color: var(--main-dark);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+a.atag:hover,
+a.atag:active {
+  color: var(--main-black);
 }
 
 /* Custom .btn */
