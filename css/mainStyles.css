@@ -121,24 +121,95 @@ a.atag:active {
 
 /* Custom .btn */
 
+/* Dark buttons keep light text in every state; hover/focus shifts the
+   background to the brand blue instead of dimming the text. */
+a.btn:link,
+a.btn:visited,
+a.btn:hover,
+a.btn:focus,
 a.btn:active {
-  color: var(--main-dark);
-}
-
-a.btn:link {
   color: var(--main-white);
 }
 
-a.btn:visited {
-  color: var(--main-white);
+a.btn.bg-dark:hover,
+a.btn.bg-dark:focus {
+  background-color: var(--main-dark) !important;
 }
 
-a.btn:hover {
-  color: var(--main-neutral);
+/* Navbar icon buttons (phone, e-mail, LinkedIn) */
+.navbar a.btn.contact-details:hover,
+.navbar a.btn.contact-details:focus {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
-a.btn:active {
+/* Visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--main-light);
+  outline-offset: 2px;
+}
+
+/* Body text: left-aligned (justified text leaves gaps on phones) */
+.card-text,
+.modal-body {
+  text-align: left;
+}
+
+/* Portfolio card "Details" buttons: full-size tap target, readable */
+.details-btn {
+  min-height: 44px;
+  min-width: 96px;
+}
+.card-footer small.text-muted {
+  color: #495057 !important;
+}
+
+/* Home carousel: each slide is a button that opens the role's details */
+.slide-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.slide-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.slide-caption {
+  display: block;
+  right: 0;
+  left: 0;
+  bottom: 28px;
+  padding: 0 8px;
+}
+.slide-title {
+  display: block;
+  line-height: 1.2;
+}
+.slide-hint {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 14px;
   color: var(--main-dark);
+  text-decoration: underline;
+}
+.slide-button:hover .slide-hint,
+.slide-button:focus .slide-hint {
+  color: var(--main-black);
+}
+@media (max-width: 575px) {
+  .slide-caption {
+    bottom: 22px;
+  }
+  .slide-title.robo_bold_26 {
+    font-size: 18px;
+  }
+  .slide-hint {
+    font-size: 13px;
+  }
 }
 
 /* Fonts */
@@ -291,10 +362,6 @@ a.btn:active {
   }
 }
 
-/*.header {
-  background-image: url("/img/fluid_background.jpg");
-}*/
-
 /* Navbar */
 
 .navbar {
@@ -322,9 +389,10 @@ a.btn:active {
   border-radius: 0.25rem;
   margin: 0 0.25em;
 }
-.navbar .navbar-nav .nav-link:not(.disabled):hover,
-.navbar .navbar-nav .nav-link:not(.disabled):focus {
-  color: var(--main-black);
+.navbar .navbar-nav .nav-link:not(.disabled):not(.active):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):not(.active):focus {
+  color: var(--main-white);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .navbar .navbar-nav .dropdown-menu {
   background-color: var(--main-dark);
@@ -520,6 +588,17 @@ a.btn:active {
 
 .carousel-indicators .active {
   background-color: var(--main-black);
+}
+
+/* Indicator bars sit below the slide image, not over the caption */
+#carouselExampleIndicators {
+  display: flex;
+  flex-direction: column;
+}
+#carouselExampleIndicators .carousel-indicators {
+  position: static;
+  order: 2;
+  margin: 12px auto 0;
 }
 
 /* TODO Custom Button Class */

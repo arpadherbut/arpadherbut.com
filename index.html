@@ -22,7 +22,7 @@
     />
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/mainStyles.css?v=4" />
+    <link rel="stylesheet" href="/css/mainStyles.css?v=6" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -33,73 +33,47 @@
   <body class="bg-light">
     <!-- Navbar (shared: keep in sync across pages) -->
     <div class="navbar_wraper">
-      <nav class="navbar navbar-expand-lg navbar-light rounded">
+      <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="Main">
         <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarsExample10"
-          aria-controls="navbarsExample10"
+          data-target="#mainNav"
+          aria-controls="mainNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
           <img src="/img/Logo.webp" width="80" height="40" alt="" />
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-md-center"
-          id="navbarsExample10"
-        >
+        <div class="collapse navbar-collapse justify-content-md-center" id="mainNav">
           <ul class="navbar-nav navbar_links">
-            <img
-              src="/img/Logo.webp"
-              width="80"
-              height="40"
-              alt="Arpad Herbut logo"
-              class="collapse navbar-collapse"
-            />
+            <li class="nav-item d-none d-lg-block">
+              <a href="/" class="navbar-brand-link" aria-label="Home"
+                ><img src="/img/Logo.webp" width="80" height="40" alt="Arpad Herbut logo"
+              /></a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/" aria-current="page"
-                >Home <span class="sr-only">(current)</span></a
-              >
+              <a class="nav-link active" href="/" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/download/Resume-Arpad_Herbut.pdf" target="_blank" rel="noopener">Resume <i class="fas fa-file-pdf" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contact">Contact</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="dropdown10"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Work Experience</a
-              >
-              <div class="dropdown-menu" aria-labelledby="dropdown10">
-                <a class="dropdown-item" href="/portfolio">Portfolio</a>
-                <a
-                  class="dropdown-item"
-                  href="/download/Resume-Arpad_Herbut.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  >Resume <i class="fas fa-file-pdf"></i
-                ></a>
-                <a class="dropdown-item" href="/webdev">Web Development</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a
-                href="tel:817-489-8846"
-                class="btn contact-details main-white"
-                aria-label="Call"
-                ><i class="fas fa-mobile-alt"></i>
-              </a>
-              <a
-                href="mailto:herbut.arp@gmail.com"
-                class="btn contact-details main-white"
-                aria-label="E-mail"
-                ><i class="fas fa-at"></i
+            <li class="nav-item nav-icons">
+              <a href="tel:817-489-8846" class="btn contact-details main-white" aria-label="Call (817) 489-8846"
+                ><i class="fas fa-mobile-alt" aria-hidden="true"></i
+              ></a>
+              <a href="mailto:herbut.arp@gmail.com" class="btn contact-details main-white" aria-label="E-mail herbut.arp@gmail.com"
+                ><i class="fas fa-at" aria-hidden="true"></i
+              ></a>
+              <a href="https://linkedin.com/in/arpadherbut" target="_blank" rel="noopener" class="btn contact-details main-white" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in" aria-hidden="true"></i
               ></a>
             </li>
           </ul>
@@ -116,7 +90,7 @@
             <div
               id="carouselExampleIndicators"
               class="carousel slide"
-              data-ride="carousel"
+              data-interval="false"
             >
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -128,78 +102,96 @@
               </ol>
               <div class="container b">
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-toggle="modal" data-target="#JobyModal">
-                    <img
-                      class="d-block w-50 mx-auto img-thumbnail"
-                      src="/img/fan-slide-500x450px.webp"
-                      width="500"
-                      height="450"
-                      fetchpriority="high"
-                      alt="Axial cooling fan"
-                    />
-                    <div class="carousel-caption d-none d-md-block robo_bold_26">
-                      Aircraft Hardware Design
-                    </div>
+                  <div class="carousel-item active">
+                    <button type="button" class="slide-button" data-toggle="modal" data-target="#JobyModal">
+                      <img
+                        class="d-block mx-auto img-thumbnail slide-img"
+                          src="/img/fan-slide-500x450px.webp"
+                          width="500"
+                          height="450"
+                          fetchpriority="high"
+                          alt="Axial cooling fan"
+                        />
+                      <span class="carousel-caption slide-caption">
+                        <span class="slide-title robo_bold_26">Aircraft Hardware Design</span>
+                        <span class="slide-hint">View details <i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+                      </span>
+                    </button>
                   </div>
-                  <div class="carousel-item" data-toggle="modal" data-target="#AVLModal">
-                    <img
-                      class="d-block w-50 mx-auto img-thumbnail"
-                      src="/img/CFD-Cylinder-Head-Cooling_Sized-500x450px.webp"
-                      width="500"
-                      height="450"
-                      alt="CFD simulation of cylinder head cooling"
-                    />
-                    <div class="carousel-caption d-none d-md-block robo_bold_26">
-                      Combustion Engine Development
-                    </div>
+                  <div class="carousel-item">
+                    <button type="button" class="slide-button" data-toggle="modal" data-target="#AVLModal">
+                      <img
+                        class="d-block mx-auto img-thumbnail slide-img"
+                          src="/img/CFD-Cylinder-Head-Cooling_Sized-500x450px.webp"
+                          width="500"
+                          height="450"
+                          alt="CFD simulation of cylinder head cooling"
+                        />
+                      <span class="carousel-caption slide-caption">
+                        <span class="slide-title robo_bold_26">Combustion Engine Development</span>
+                        <span class="slide-hint">View details <i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+                      </span>
+                    </button>
                   </div>
-                  <div class="carousel-item" data-toggle="modal" data-target="#NaVegreModal">
-                    <img
-                      class="d-block w-50 mx-auto img-thumbnail"
-                      src="/img/cnc_machine_Sized-500x450px.webp"
-                      width="500"
-                      height="450"
-                      alt="CNC machine"
-                    />
-                    <div class="carousel-caption d-none d-md-block robo_bold_26">
-                      CAM/CAD Design
-                    </div>
+                  <div class="carousel-item">
+                    <button type="button" class="slide-button" data-toggle="modal" data-target="#NaVegreModal">
+                      <img
+                        class="d-block mx-auto img-thumbnail slide-img"
+                          src="/img/cnc_machine_Sized-500x450px.webp"
+                          width="500"
+                          height="450"
+                          alt="CNC machine"
+                        />
+                      <span class="carousel-caption slide-caption">
+                        <span class="slide-title robo_bold_26">CAM/CAD Design</span>
+                        <span class="slide-hint">View details <i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+                      </span>
+                    </button>
                   </div>
-                  <div class="carousel-item" data-toggle="modal" data-target="#LumoConceptModal">
-                    <img
-                      class="d-block w-50 mx-auto img-thumbnail"
-                      src="/img/lumoconcept-500x450px.webp"
-                      width="500"
-                      height="450"
-                      alt="LumoConcept custom lamp design"
-                    />
-                    <div class="carousel-caption d-none d-md-block robo_bold_26">
-                      Custom Part Design
-                    </div>
+                  <div class="carousel-item">
+                    <button type="button" class="slide-button" data-toggle="modal" data-target="#LumoConceptModal">
+                      <img
+                        class="d-block mx-auto img-thumbnail slide-img"
+                          src="/img/lumoconcept-500x450px.webp"
+                          width="500"
+                          height="450"
+                          alt="LumoConcept custom lamp design"
+                        />
+                      <span class="carousel-caption slide-caption">
+                        <span class="slide-title robo_bold_26">Custom Part Design</span>
+                        <span class="slide-hint">View details <i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+                      </span>
+                    </button>
                   </div>
-                  <div class="carousel-item" data-toggle="modal" data-target="#LupfeModal">
-                    <img
-                      class="d-block w-50 mx-auto img-thumbnail"
-                      src="/img/Lupfe-Sized-500x450px.webp"
-                      width="500"
-                      height="450"
-                      alt="Lupfe engine analysis"
-                    />
-                    <div class="carousel-caption d-none d-md-block robo_bold_26">
-                      Engineering Analysis
-                    </div>
+                  <div class="carousel-item">
+                    <button type="button" class="slide-button" data-toggle="modal" data-target="#LupfeModal">
+                      <img
+                        class="d-block mx-auto img-thumbnail slide-img"
+                          src="/img/Lupfe-Sized-500x450px.webp"
+                          width="500"
+                          height="450"
+                          alt="Lupfe engine analysis"
+                        />
+                      <span class="carousel-caption slide-caption">
+                        <span class="slide-title robo_bold_26">Engineering Analysis</span>
+                        <span class="slide-hint">View details <i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+                      </span>
+                    </button>
                   </div>
-                  <div class="carousel-item" data-toggle="modal" data-target="#AudiModal">
-                    <img
-                      class="d-block w-50 mx-auto img-thumbnail"
-                      src="/img/oilfilter-Sized-500x450px.webp"
-                      width="500"
-                      height="450"
-                      alt="Oil filter multiphysics simulation"
-                    />
-                    <div class="carousel-caption d-none d-md-block robo_bold_26">
-                      Multiphysics Analysis
-                    </div>
+                  <div class="carousel-item">
+                    <button type="button" class="slide-button" data-toggle="modal" data-target="#AudiModal">
+                      <img
+                        class="d-block mx-auto img-thumbnail slide-img"
+                          src="/img/oilfilter-Sized-500x450px.webp"
+                          width="500"
+                          height="450"
+                          alt="Oil filter multiphysics simulation"
+                        />
+                      <span class="carousel-caption slide-caption">
+                        <span class="slide-title robo_bold_26">Multiphysics Analysis</span>
+                        <span class="slide-hint">View details <i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+                      </span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -229,7 +221,7 @@
             <h1 class="card-title h3 my-4 bg">
               <strong>Hi, I'm Árpád, and I'm a Mechanical Design Engineer.</strong>
             </h1>
-            <p class="card-text py-2 text-justify col-md-8 mx-auto">
+            <p class="card-text py-2 col-md-8 mx-auto">
               I design aircraft hardware in the San Francisco Bay Area. Since 2021 I've mainly designed Environmental Control System hardware,
               taking it from concept through integration, checkout and flight test across multiple aircraft platforms.<br /><br />
               Before moving to the U.S. from Hungary in 2019, I worked on internal combustion engine development,
@@ -248,29 +240,15 @@
               <footer class="footer mt-auto py-3 text-md-right">
                 <div class="container">
                   <a href="tel:817-489-8846" class="btn contact-details robo_bold_12 bg-dark"
-                    ><i class="fas fa-mobile-alt"></i> (817) 489-8846
-                  </a>
-                  <a
-                    href="mailto:herbut.arp@gmail.com"
-                    class="btn contact-details robo_bold_12 bg-dark"
-                    >herbut.arp<i class="fas fa-at"></i>gmail.com</a
+                    ><i class="fas fa-mobile-alt" aria-hidden="true"></i> (817) 489-8846</a
                   >
-                  <a
-                    href="https://facebook.com/arpadherbut"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Facebook"
+                  <a href="mailto:herbut.arp@gmail.com" class="btn contact-details robo_bold_12 bg-dark"
+                    >herbut.arp<i class="fas fa-at" aria-hidden="true"></i>gmail.com</a
+                  >
+                  <a href="https://linkedin.com/in/arpadherbut" target="_blank" rel="noopener" aria-label="LinkedIn"
                     class="btn contact-details robo_bold_12 bg-dark"
-                    ><i class="fab fa-facebook-square"></i
+                    ><i class="fab fa-linkedin-in" aria-hidden="true"></i
                   ></a>
-                  <a
-                    href="https://linkedin.com/in/arpadherbut"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="LinkedIn"
-                    class="btn contact-details robo_bold_12 bg-dark"
-                    ><i class="fab fa-linkedin-in"></i>
-                  </a>
                 </div>
               </footer>
             </div>
@@ -406,7 +384,7 @@
             <h5 class="modal-title" id="LupfeModalLabel">
               <a href="https://www.lupfe.com/" target="_blank" rel="noopener">Lupfe </a>|
               Analysis Engineer <br /><small class="text-muted"
-                >2 years 3 months</small
+                >Feb 2017 – May 2019</small
               >
             </h5>
             <button
@@ -516,7 +494,7 @@
           <div class="modal-header">
             <h5 class="modal-title" id="NaVegreModalLabel">
               NaVégre | CAM Programmer / Design Engineer <br /><small class="text-muted"
-                >5 years 1 months</small
+                >Oct 2011 – Dec 2016</small
               >
             </h5>
             <button
@@ -580,7 +558,7 @@
               <a href="https://www.lumoconcept.com/" target="_blank" rel="noopener"
                 >LumoConcept</a
               >
-              | Design Engineer <br /><small class="text-muted">11 months</small>
+              | Design Engineer <br /><small class="text-muted">Nov 2015 – Oct 2016</small>
             </h5>
             <button
               type="button"
@@ -670,7 +648,7 @@
                 >AVL</a
               >
               | Analysis Engineer Intern<br /><small class="text-muted"
-                >8 months</small
+                >Feb 2015 – Oct 2015</small
               >
             </h5>
             <button
@@ -727,7 +705,7 @@
             <h5 class="modal-title" id="AudiModalLabel">
               <a href="https://audi.hu/en/" target="_blank" rel="noopener">Audi</a> | Mechanical
               Analysis Engineer Intern<br /><small class="text-muted"
-                >10 months</small
+                >Mar 2014 – Jan 2015</small
               >
             </h5>
             <button

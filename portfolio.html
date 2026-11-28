@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://arpadherbut.com/portfolio" />
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/mainStyles.css?v=4" />
+    <link rel="stylesheet" href="/css/mainStyles.css?v=6" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -22,71 +22,47 @@
   <body class="bg-light">
     <!-- Navbar (shared: keep in sync across pages) -->
     <div class="navbar_wraper">
-      <nav class="navbar navbar-expand-lg navbar-light rounded">
+      <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="Main">
         <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarsExample10"
-          aria-controls="navbarsExample10"
+          data-target="#mainNav"
+          aria-controls="mainNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
           <img src="/img/Logo.webp" width="80" height="40" alt="" />
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-md-center"
-          id="navbarsExample10"
-        >
+        <div class="collapse navbar-collapse justify-content-md-center" id="mainNav">
           <ul class="navbar-nav navbar_links">
-            <img
-              src="/img/Logo.webp"
-              width="80"
-              height="40"
-              alt="Arpad Herbut logo"
-              class="collapse navbar-collapse"
-            />
+            <li class="nav-item d-none d-lg-block">
+              <a href="/" class="navbar-brand-link" aria-label="Home"
+                ><img src="/img/Logo.webp" width="80" height="40" alt="Arpad Herbut logo"
+              /></a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="dropdown10"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Work Experience</a
-              >
-              <div class="dropdown-menu" aria-labelledby="dropdown10">
-                <a class="dropdown-item active" href="/portfolio" aria-current="page">Portfolio</a>
-                <a
-                  class="dropdown-item"
-                  href="/download/Resume-Arpad_Herbut.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  >Resume <i class="fas fa-file-pdf"></i
-                ></a>
-                <a class="dropdown-item" href="/webdev">Web Development</a>
-              </div>
+              <a class="nav-link active" href="/portfolio" aria-current="page">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a
-                href="tel:817-489-8846"
-                class="btn contact-details main-white"
-                aria-label="Call"
-                ><i class="fas fa-mobile-alt"></i>
-              </a>
-              <a
-                href="mailto:herbut.arp@gmail.com"
-                class="btn contact-details main-white"
-                aria-label="E-mail"
-                ><i class="fas fa-at"></i
+              <a class="nav-link" href="/download/Resume-Arpad_Herbut.pdf" target="_blank" rel="noopener">Resume <i class="fas fa-file-pdf" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item nav-icons">
+              <a href="tel:817-489-8846" class="btn contact-details main-white" aria-label="Call (817) 489-8846"
+                ><i class="fas fa-mobile-alt" aria-hidden="true"></i
+              ></a>
+              <a href="mailto:herbut.arp@gmail.com" class="btn contact-details main-white" aria-label="E-mail herbut.arp@gmail.com"
+                ><i class="fas fa-at" aria-hidden="true"></i
+              ></a>
+              <a href="https://linkedin.com/in/arpadherbut" target="_blank" rel="noopener" class="btn contact-details main-white" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in" aria-hidden="true"></i
               ></a>
             </li>
           </ul>
@@ -97,11 +73,13 @@
     <main role="main">
       <div class="albumcard-deck container">
         <div class="bg-grad">
+          <h1 class="robo_bold_26 text-center pt-4 mb-1">Portfolio</h1>
+          <p class="text-center mb-4">Select a role to see projects and details.</p>
           <div class="row">
             <div class="col-md-4 py-2">
               <div class="card mb-4 shadow-sm h-100">
-                <a class="project-card" data-toggle="modal" data-target="#JobyModal"
-                  ><img
+                <a class="project-card" href="#JobyModal" data-toggle="modal" data-target="#JobyModal"
+                   tabindex="-1" aria-hidden="true"><img
                     class="card-img-top img-thumbnail"
                     src="/img/fan-500x333px.webp"
                     width="500"
@@ -109,10 +87,8 @@
                     alt="Axial cooling fan"
                 /></a>
                 <div class="card-body">
-                  <a href="https://www.jobyaviation.com/" target="_blank" rel="noopener"
-                    ><h5 class="card-title">Joby Aviation</h5></a
-                  >
-                  <h6 class="card-subtitle mb-2 text-muted">Mechanical Design Engineer</h6>
+                  <h2 class="card-title h5"><a href="#JobyModal" data-toggle="modal" data-target="#JobyModal">Joby Aviation</a></h2>
+                  <p class="card-subtitle h6 mb-2 text-muted">Mechanical Design Engineer</p>
                   <p class="card-text">
                     Mechanical design of aircraft hardware for the Environmental Control System: ventilation fans, sensors, ducting, vents and supporting structure in CATIA. Responsible engineer for multiple assemblies, from concept through flight test.
                   </p>
@@ -120,7 +96,7 @@
                 <div class="card-footer text-muted">
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" data-toggle="modal" data-target="#JobyModal" class="btn btn-sm btn-outline-secondary">More</button>
+                      <button type="button" data-toggle="modal" data-target="#JobyModal" class="btn btn-outline-dark details-btn">Details</button>
                     </div>
                     <small class="text-muted">Jan 2021 – present</small>
                   </div>
@@ -129,8 +105,8 @@
             </div>
             <div class="col-md-4 py-2">
               <div class="card mb-4 shadow-sm h-100">
-                <a class="project-card" data-toggle="modal" data-target="#LupfeModal"
-                  ><img
+                <a class="project-card" href="#LupfeModal" data-toggle="modal" data-target="#LupfeModal"
+                   tabindex="-1" aria-hidden="true"><img
                     class="card-img-top img-thumbnail"
                     src="/img/Lupfe-Sized-500x333px.webp"
                     width="500"
@@ -138,10 +114,8 @@
                     alt="Lupfe engine analysis"
                 /></a>
                 <div class="card-body">
-                  <a href="https://www.lupfe.com/" target="_blank" rel="noopener"
-                    ><h5 class="card-title">Lupfe</h5></a
-                  >
-                  <h6 class="card-subtitle mb-2 text-muted">Analysis Engineer</h6>
+                  <h2 class="card-title h5"><a href="#LupfeModal" data-toggle="modal" data-target="#LupfeModal">Lupfe</a></h2>
+                  <p class="card-subtitle h6 mb-2 text-muted">Analysis Engineer</p>
                   <p class="card-text">
                     Conducted analysis studies of an experimental internal combustion engine, developed to be used in industrial electric quadcopter drones as a generator set. Mainly worked with Ansys Workbench.
                   </p>
@@ -149,17 +123,17 @@
                 <div class="card-footer text-muted">
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" data-toggle="modal" data-target="#LupfeModal" class="btn btn-sm btn-outline-secondary">More</button>
+                      <button type="button" data-toggle="modal" data-target="#LupfeModal" class="btn btn-outline-dark details-btn">Details</button>
                     </div>
-                    <small class="text-muted">2 years 3 months</small>
+                    <small class="text-muted">Feb 2017 – May 2019</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4 py-2">
               <div class="card mb-4 shadow-sm h-100">
-                <a class="project-card" data-toggle="modal" data-target="#NaVegreModal"
-                  ><img
+                <a class="project-card" href="#NaVegreModal" data-toggle="modal" data-target="#NaVegreModal"
+                   tabindex="-1" aria-hidden="true"><img
                     class="card-img-top img-thumbnail"
                     src="/img/cnc_machine_Sized-500x333px.webp"
                     width="500"
@@ -167,8 +141,8 @@
                     alt="CNC machine"
                 /></a>
                 <div class="card-body">
-                  <h5 class="card-title">NaVégre</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">CAM Programmer / Design Engineer</h6>
+                  <h2 class="card-title h5"><a href="#NaVegreModal" data-toggle="modal" data-target="#NaVegreModal">NaVégre</a></h2>
+                  <p class="card-subtitle h6 mb-2 text-muted">CAM Programmer / Design Engineer</p>
                   <p class="card-text">
                     Modelled 3D parts based on drawings, built machining plans for 2.5D
                     milling, and wired electrical discharge machines (Esprit, CREO).<br />Built and maintained the network between the CAM workstation, a 2.5D milling station and a wired EDM.
@@ -177,17 +151,17 @@
                 <div class="card-footer text-muted">
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" data-toggle="modal" data-target="#NaVegreModal" class="btn btn-sm btn-outline-secondary">More</button>
+                      <button type="button" data-toggle="modal" data-target="#NaVegreModal" class="btn btn-outline-dark details-btn">Details</button>
                     </div>
-                    <small class="text-muted">5 years 1 months</small>
+                    <small class="text-muted">Oct 2011 – Dec 2016</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4 py-2">
               <div class="card mb-4 shadow-sm h-100">
-                <a class="project-card" data-toggle="modal" data-target="#LumoConceptModal"
-                  ><img
+                <a class="project-card" href="#LumoConceptModal" data-toggle="modal" data-target="#LumoConceptModal"
+                   tabindex="-1" aria-hidden="true"><img
                     class="card-img-top img-thumbnail"
                     src="/img/lumoconcept-500x333px.webp"
                     width="500"
@@ -196,10 +170,8 @@
                     alt="LumoConcept custom lamp design"
                 /></a>
                 <div class="card-body">
-                  <a href="https://www.lumoconcept.com/" target="_blank" rel="noopener"
-                    ><h5 class="card-title">LumoConcept</h5></a
-                  >
-                  <h6 class="card-subtitle mb-2 text-muted">Design Engineer</h6>
+                  <h2 class="card-title h5"><a href="#LumoConceptModal" data-toggle="modal" data-target="#LumoConceptModal">LumoConcept</a></h2>
+                  <p class="card-subtitle h6 mb-2 text-muted">Design Engineer</p>
                   <p class="card-text">
                     Custom lamp design company. Fast paced environment. Design cycle for a new lamp usually lasted about two to three months. I was responsible to design the product, create drafts of the parts and assemblies, plan and organize production schedules, and supervise the assembly of my design.
                   </p>
@@ -207,17 +179,17 @@
                 <div class="card-footer text-muted">
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" data-toggle="modal" data-target="#LumoConceptModal" class="btn btn-sm btn-outline-secondary">More</button>
+                      <button type="button" data-toggle="modal" data-target="#LumoConceptModal" class="btn btn-outline-dark details-btn">Details</button>
                     </div>
-                    <small class="text-muted">11 months</small>
+                    <small class="text-muted">Nov 2015 – Oct 2016</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4 py-2">
               <div class="card mb-4 shadow-sm h-100">
-                <a class="project-card" data-toggle="modal" data-target="#AVLModal"
-                  ><img
+                <a class="project-card" href="#AVLModal" data-toggle="modal" data-target="#AVLModal"
+                   tabindex="-1" aria-hidden="true"><img
                     class="card-img-top img-thumbnail"
                     src="/img/CFD-Cylinder-Head-Cooling_Sized-500x333px.webp"
                     width="500"
@@ -226,10 +198,8 @@
                     alt="CFD simulation of cylinder head cooling"
                 /></a>
                 <div class="card-body">
-                  <a href="https://www.avl.com/" target="_blank" rel="noopener"
-                    ><h5 class="card-title">AVL</h5></a
-                  >
-                  <h6 class="card-subtitle mb-2 text-muted">Analysis Engineer Intern</h6>
+                  <h2 class="card-title h5"><a href="#AVLModal" data-toggle="modal" data-target="#AVLModal">AVL</a></h2>
+                  <p class="card-subtitle h6 mb-2 text-muted">Analysis Engineer Intern</p>
                   <p class="card-text">
                     Aided in the development of internal combustion engine cooling systems
                     and cooperated with an international team of design and mechanical
@@ -239,17 +209,17 @@
                 <div class="card-footer text-muted">
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" data-toggle="modal" data-target="#AVLModal" class="btn btn-sm btn-outline-secondary">More</button>
+                      <button type="button" data-toggle="modal" data-target="#AVLModal" class="btn btn-outline-dark details-btn">Details</button>
                     </div>
-                    <small class="text-muted">8 months</small>
+                    <small class="text-muted">Feb 2015 – Oct 2015</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4 py-2">
               <div class="card mb-4 shadow-sm h-100">
-                <a class="project-card" data-toggle="modal" data-target="#AudiModal"
-                  ><img
+                <a class="project-card" href="#AudiModal" data-toggle="modal" data-target="#AudiModal"
+                   tabindex="-1" aria-hidden="true"><img
                     class="card-img-top img-thumbnail"
                     src="/img/oilfilter-Sized-500x333px.webp"
                     width="500"
@@ -258,10 +228,8 @@
                     alt="Oil filter multiphysics simulation"
                 /></a>
                 <div class="card-body">
-                  <a href="https://audi.hu/en/" target="_blank" rel="noopener"
-                    ><h5 class="card-title">Audi</h5></a
-                  >
-                  <h6 class="card-subtitle mb-2 text-muted">Analysis Engineer Intern</h6>
+                  <h2 class="card-title h5"><a href="#AudiModal" data-toggle="modal" data-target="#AudiModal">Audi</a></h2>
+                  <p class="card-subtitle h6 mb-2 text-muted">Analysis Engineer Intern</p>
                   <p class="card-text">
                     Explored and researched possible applications of the ABAQUS CFD software
                     for the internal combustion engine development department (ABAQUS CFD,
@@ -271,9 +239,9 @@
                 <div class="card-footer text-muted">
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" data-toggle="modal" data-target="#AudiModal" class="btn btn-sm btn-outline-secondary">More</button>
+                      <button type="button" data-toggle="modal" data-target="#AudiModal" class="btn btn-outline-dark details-btn">Details</button>
                     </div>
-                    <small class="text-muted">10 months</small>
+                    <small class="text-muted">Mar 2014 – Jan 2015</small>
                   </div>
                 </div>
               </div>
@@ -284,29 +252,15 @@
               <footer class="footer mt-auto py-3 text-md-right">
                 <div class="container">
                   <a href="tel:817-489-8846" class="btn contact-details robo_bold_12 bg-dark"
-                    ><i class="fas fa-mobile-alt"></i> (817) 489-8846
-                  </a>
-                  <a
-                    href="mailto:herbut.arp@gmail.com"
-                    class="btn contact-details robo_bold_12 bg-dark"
-                    >herbut.arp<i class="fas fa-at"></i>gmail.com</a
+                    ><i class="fas fa-mobile-alt" aria-hidden="true"></i> (817) 489-8846</a
                   >
-                  <a
-                    href="https://facebook.com/arpadherbut"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Facebook"
+                  <a href="mailto:herbut.arp@gmail.com" class="btn contact-details robo_bold_12 bg-dark"
+                    >herbut.arp<i class="fas fa-at" aria-hidden="true"></i>gmail.com</a
+                  >
+                  <a href="https://linkedin.com/in/arpadherbut" target="_blank" rel="noopener" aria-label="LinkedIn"
                     class="btn contact-details robo_bold_12 bg-dark"
-                    ><i class="fab fa-facebook-square"></i
+                    ><i class="fab fa-linkedin-in" aria-hidden="true"></i
                   ></a>
-                  <a
-                    href="https://linkedin.com/in/arpadherbut"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="LinkedIn"
-                    class="btn contact-details robo_bold_12 bg-dark"
-                    ><i class="fab fa-linkedin-in"></i>
-                  </a>
                 </div>
               </footer>
             </div>
@@ -441,7 +395,7 @@
             <h5 class="modal-title" id="LupfeModalLabel">
               <a href="https://www.lupfe.com/" target="_blank" rel="noopener">Lupfe </a>|
               Analysis Engineer <br /><small class="text-muted"
-                >2 years 3 months</small
+                >Feb 2017 – May 2019</small
               >
             </h5>
             <button
@@ -551,7 +505,7 @@
           <div class="modal-header">
             <h5 class="modal-title" id="NaVegreModalLabel">
               NaVégre | CAM Programmer / Design Engineer <br /><small class="text-muted"
-                >5 years 1 months</small
+                >Oct 2011 – Dec 2016</small
               >
             </h5>
             <button
@@ -615,7 +569,7 @@
               <a href="https://www.lumoconcept.com/" target="_blank" rel="noopener"
                 >LumoConcept</a
               >
-              | Design Engineer <br /><small class="text-muted">11 months</small>
+              | Design Engineer <br /><small class="text-muted">Nov 2015 – Oct 2016</small>
             </h5>
             <button
               type="button"
@@ -705,7 +659,7 @@
                 >AVL</a
               >
               | Analysis Engineer Intern<br /><small class="text-muted"
-                >8 months</small
+                >Feb 2015 – Oct 2015</small
               >
             </h5>
             <button
@@ -762,7 +716,7 @@
             <h5 class="modal-title" id="AudiModalLabel">
               <a href="https://audi.hu/en/" target="_blank" rel="noopener">Audi</a> | Mechanical
               Analysis Engineer Intern<br /><small class="text-muted"
-                >10 months</small
+                >Mar 2014 – Jan 2015</small
               >
             </h5>
             <button
