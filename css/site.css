@@ -761,6 +761,22 @@ body:has(dialog[open]) {
   font-size: 1.08rem;
   overflow-wrap: anywhere;
 }
+.contact-card .action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 14px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.contact-card:hover .action,
+.contact-card:focus-visible .action {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 /* CTA band */
 .cta {
